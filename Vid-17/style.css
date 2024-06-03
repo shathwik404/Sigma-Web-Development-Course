@@ -1,0 +1,32 @@
+div {
+  background-color: pink;
+}
+.red {
+  background-color: red;
+}
+#green {
+  background-color: green;
+}
+div > p {
+  color: blue;
+  background-color: aqua;
+}
+.div p {
+  background-color: blueviolet;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a:visited {
+  color: rgb(0, 255, 42);
+}
+a:active {
+  background-color: red;
+}
+a:hover {
+  color: chocolate;
+}
+p:first-child {
+  color: brown;
+}
