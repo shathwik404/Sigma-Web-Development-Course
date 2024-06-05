@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More About CSS Selectors</title>
+    <style>
+        .box:first-child {
+            background-color: yellowgreen;
+        }
+
+        .box::first-line {
+            color: red;
+        }
+
+        .boxes * {
+            background-color: pink;
+            border: 2px solid black;
+        }
+
+        [data-color="primary"] {
+            padding-top: 30px;
+        }
+
+        .box:nth-child(odd) {
+            background-color: black;
+        }
+
+        .boxes::after {
+            content: "This is nice";
+        }
+
+        .boxes::before {
+            content: ":)";
+        }
+
+        ::selection {
+            background-color: none;
+            color: rgb(0, 255, 42);
+        }
+
+        .box::first-letter {
+            color: peru;
+            font-size: 100px;
+        }
+
+        input::placeholder {
+            color: aquamarine;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, commodi.
+        </div>
+        <div data-color="primary" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi.
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+            provident!</div>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+            provident!
+        </div>
+        <input type="text" placeholder="Enter your name">
+</body>
+
+</html>
