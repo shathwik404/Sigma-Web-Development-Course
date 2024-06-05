@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --color: blue;
+  --bg-color: skyblue;
+  --txt-color: rgb(255, 255, 255);
+}
+/* :root {
+  --color: red;
+  --bg-color: brown;
+  --txt-color: rgb(0, 0, 0);
+} */
+li {
+  list-style: none;
+  background-color: var(--color);
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  color: var(--txt-color);
+}
+ul {
+  display: flex;
+}
+body {
+  background-color: var(--bg-color);
+}
