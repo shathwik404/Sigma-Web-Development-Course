@@ -1,0 +1,20 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right ul {
+    display: flex;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
